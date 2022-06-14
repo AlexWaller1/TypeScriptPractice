@@ -70,3 +70,28 @@ console.log(Direction2.Warren21);
 console.log(Direction2.MellonTech);
 // Mellon-Tech
 console.log(Direction2.EggplantHead);
+// Eggplant-Head
+// Objects
+const singleRobot1 = {
+    id: 1,
+    name: "Hank-44"
+};
+console.log(singleRobot1.id);
+// 1
+console.log(singleRobot1.name);
+// can also declare a type (appears similar to a class)
+const singlerobot2 = {
+    id: 2,
+    name: "Warren-21"
+};
+// then declare what is essentially an instance of that class
+console.log(singlerobot2.id);
+// 2
+console.log(singlerobot2.name);
+// Warren-21
+const singleRobot3 = {
+    id: 3,
+    name: "Mellon-Tech"
+};
+console.log(singleRobot3.id);
+console.log(singleRobot3.name);

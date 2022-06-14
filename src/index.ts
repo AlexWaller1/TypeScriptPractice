@@ -88,3 +88,47 @@ console.log(Direction2.MellonTech);
 // Mellon-Tech
 console.log(Direction2.EggplantHead);
 // Eggplant-Head
+
+// Objects
+const singleRobot1: {
+    id: number,
+    name: string
+    // specify what types of values the keys must have
+} = {
+    id: 1,
+    name: "Hank-44"
+};
+
+console.log(singleRobot1.id);
+// 1
+console.log(singleRobot1.name);
+// Hank-44
+
+type SingleRobotMold = {
+    id: number,
+    name: string
+}
+// can also declare a type (appears similar to a class)
+
+const singlerobot2: SingleRobotMold = {
+    id: 2,
+    name: "Warren-21"
+}
+// then declare what is essentially an instance of that class
+
+console.log(singlerobot2.id);
+// 2
+console.log(singlerobot2.name);
+// Warren-21
+
+const singleRobot3: SingleRobotMold = {
+    id: 3,
+    name: "Mellon-Tech"
+}
+
+console.log(singleRobot3.id);
+// 3
+console.log(singleRobot3.name);
+// Mellon-Tech
+
+// Type Assertion
