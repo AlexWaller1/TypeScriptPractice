@@ -69,3 +69,22 @@ console.log(Direction1.Three);
 // 2
 
 // if assign 4 to One, then Two will be 5 and so on
+
+// eNums can also be assigned as strings if all eNum 
+// elements are strings
+
+enum Direction2 {
+        Hank44 = "Hank-44",
+        Warren21 = "Warren-21",
+        MellonTech = "Mellon-Tech",
+        EggplantHead = "Eggplant-Head"
+}
+
+console.log(Direction2.Hank44);
+// Hank-44
+console.log(Direction2.Warren21);
+// Warren-21
+console.log(Direction2.MellonTech);
+// Mellon-Tech
+console.log(Direction2.EggplantHead);
+// Eggplant-Head

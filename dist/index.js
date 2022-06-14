@@ -52,3 +52,21 @@ console.log(Direction1.One);
 console.log(Direction1.Two);
 // 1
 console.log(Direction1.Three);
+// 2
+// if assign 4 to One, then Two will be 5 and so on
+// eNums can also be assigned as strings if all eNum 
+// elements are strings
+var Direction2;
+(function (Direction2) {
+    Direction2["Hank44"] = "Hank-44";
+    Direction2["Warren21"] = "Warren-21";
+    Direction2["MellonTech"] = "Mellon-Tech";
+    Direction2["EggplantHead"] = "Eggplant-Head";
+})(Direction2 || (Direction2 = {}));
+console.log(Direction2.Hank44);
+// Hank-44
+console.log(Direction2.Warren21);
+// Warren-21
+console.log(Direction2.MellonTech);
+// Mellon-Tech
+console.log(Direction2.EggplantHead);
