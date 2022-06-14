@@ -49,3 +49,23 @@ roboTuples = [
     [4, "Eggplant-Head"]
 ]
 // array of tuples
+
+// Unions can be one data type or another if specified
+let union1: string | number = 34;
+
+// Enum
+enum Direction1 {
+    One,
+    Two,
+    Three,
+    Four
+}
+
+console.log(Direction1.One);
+// 0
+console.log(Direction1.Two);
+// 1
+console.log(Direction1.Three);
+// 2
+
+// if assign 4 to One, then Two will be 5 and so on
