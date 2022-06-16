@@ -94,4 +94,23 @@ const singleRobot3 = {
     name: "Mellon-Tech"
 };
 console.log(singleRobot3.id);
+// 3
 console.log(singleRobot3.name);
+// Mellon-Tech
+// Type Assertion
+let cid = 1;
+let customerId = cid;
+let customerId2 = cid;
+// Functions
+// specify the data types of the arguments and the type of return
+function addNum(x, y) {
+    return x + y;
+}
+console.log(addNum(2, 2));
+// 4
+// Void (no return value)
+function log(message) {
+    console.log(message);
+}
+log(37);
+log("Hello Oa");

@@ -132,3 +132,26 @@ console.log(singleRobot3.name);
 // Mellon-Tech
 
 // Type Assertion
+let cid: any = 1;
+let customerId = <number>cid;
+
+let customerId2 = cid as number;
+
+// Functions
+// specify the data types of the arguments and the type of return
+function addNum(x: number, y: number): number {
+    return x + y;
+}
+
+console.log(addNum(2, 2));
+// 4
+
+// Void (no return value)
+function log(message: string | number): void {
+    console.log(message);
+}
+
+log(37);
+// 37
+log("Hello Oa");
+// Hello Oa
