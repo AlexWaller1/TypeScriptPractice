@@ -155,3 +155,29 @@ log(37);
 // 37
 log("Hello Oa");
 // Hello Oa
+
+// Interfaces
+interface UserInterface {
+    readonly id: number;
+    // can't reassign
+    name: string;
+    age?: number;
+    // optional
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name: "Tomar Rae"
+}
+
+type NumString = number | string;
+// can't do an or with an interface
+
+const numString1: NumString = 37;
+
+const numString2: NumString= "37";
+
+console.log(numString1);
+// 37 (number)
+console.log(numString2);
+// 37 (string)

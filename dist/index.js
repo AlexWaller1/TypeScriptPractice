@@ -113,4 +113,13 @@ function log(message) {
     console.log(message);
 }
 log(37);
+// 37
 log("Hello Oa");
+const user1 = {
+    id: 1,
+    name: "Tomar Rae"
+};
+const numString1 = 37;
+const numString2 = "37";
+console.log(numString1);
+console.log(numString2);
