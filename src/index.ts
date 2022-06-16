@@ -181,3 +181,25 @@ console.log(numString1);
 // 37 (number)
 console.log(numString2);
 // 37 (string)
+
+// using interfaces for functions
+interface MathFunc {
+    (x: number, y: number): number;
+}
+
+const add1: MathFunc = (x: number, y: number): number => x + y;
+
+console.log(add1(9, 10));
+// 19
+
+const subtraction1: MathFunc = (x: number, y: number): number => y - x;
+
+console.log(subtraction1(9, 10));
+// 1
+
+
+// Classes
+
+class GreenLantern {
+    
+}

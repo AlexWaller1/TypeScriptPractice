@@ -119,7 +119,14 @@ const user1 = {
     id: 1,
     name: "Tomar Rae"
 };
+// can't do an or with an interface
 const numString1 = 37;
 const numString2 = "37";
 console.log(numString1);
+// 37 (number)
 console.log(numString2);
+const add1 = (x, y) => x + y;
+console.log(add1(9, 10));
+// 19
+const subtraction1 = (x, y) => y - x;
+console.log(subtraction1(9, 10));
