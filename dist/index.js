@@ -144,3 +144,23 @@ class GreenLantern {
 }
 console.log("-------------------------------------------------");
 console.log("-------------------------------------------");
+class OutlyingLanterns extends GreenLantern {
+    constructor(id, name, homePlanet, sector, fearless, outpost) {
+        super(id, name, homePlanet, sector, fearless);
+        this.outpost = outpost;
+    }
+}
+// Generics
+// without Generic
+function getArray(elements) {
+    return new Array().concat(elements);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(["a", "b", "c", "d"]);
+// with Generic
+function getArray2(elements) {
+    return new Array().concat(elements);
+}
+// Specifying a Generic type allow to reuse for many data types
+let numArray2 = getArray2([1, 2, 3, 4]);
+let strArray2 = getArray2(["a", "b", "c", "d"]);
