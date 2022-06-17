@@ -236,3 +236,13 @@ class GreenLantern implements LanternInterface{
 
 console.log("-------------------------------------------------");
 console.log("-------------------------------------------");
+
+class OutlyingLanterns extends GreenLantern {
+    outpost: string;
+
+    constructor(id: number, name: string, homePlanet: string, sector: number, fearless: boolean, outpost: string) {
+        
+        super(id, name, homePlanet, sector, fearless);
+        this.outpost = outpost
+    }
+}
