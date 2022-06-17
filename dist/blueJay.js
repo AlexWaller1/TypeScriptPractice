@@ -58,3 +58,20 @@ console.log(minNum(nums45));
 // 3
 console.log("----------------------------------------------");
 console.log("-------------------------------------------------");
+const crashBandicoot = "Crash Bandicoot";
+console.log(crashBandicoot);
+// Crash Bandicoot
+const neoCortex = "Neo Cortex";
+console.log(neoCortex);
+// Neo Cortex
+const dingodile = "Dingodile";
+console.log(dingodile);
+// Dingodile
+const spyro = "Spyro";
+console.log(spyro);
+// Spyro
+const tinyTiger = "Tiny Tiger";
+console.log(tinyTiger);
+// Tiny Tiger
+console.log("-----------------------------------------------");
+console.log("------------------------------------------");
