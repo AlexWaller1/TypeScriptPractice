@@ -112,3 +112,95 @@ console.log(tinyTiger);
 
 console.log("-----------------------------------------------");
 console.log("------------------------------------------");
+
+const robots: string[] = ["Hank-44", "Warren-21", "Mellon-Tech", "Eggplant-Head"];
+
+const ePetroleum: string[] = ["Thierry", "Laurent", "Antoine", "Hunzuu", "Gilgamesh"];
+
+function arrayIncludes(array: string[], target: string): boolean {
+    let i = 0;
+
+    for (; i < array.length; i++) {
+        if (array[i] == target) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(arrayIncludes(robots, "Mellon-Tech"));
+// true
+console.log(arrayIncludes(robots, "Bender"));
+// false
+
+console.log("------------------------------------------");
+console.log("-------------------------------------------------");
+
+let racecar: string = "racecar";
+
+let television: string = "televison";
+
+let radar: string = "radar";
+
+let hotel: string = "hotel";
+
+let kayak: string = "kayak";
+
+let restaurant: string = "restaurant";
+
+function isPalindrome(string: string): boolean {
+    let i = 0;
+    let j = string.length - 1;
+
+    for (; i < j; i++, j--) {
+        if (string.charAt(i) !== string.charAt(j)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isPalindrome(racecar));
+// true
+console.log(isPalindrome(television));
+// false
+console.log(isPalindrome(radar));
+// true
+console.log(isPalindrome(hotel));
+// false
+console.log(isPalindrome(kayak));
+// true
+console.log(isPalindrome(restaurant));
+// false
+
+console.log("-----------------------------------------");
+console.log("------------------------------------------------");
+
+let primeNum1: number = 9;
+
+let primeNum2: number = 12;
+
+let primeNum3: number = 7;
+
+let primeNum4: number = 14;
+
+let primeNum5: number = 23;
+
+let primeNum6: number = 19;
+
+function isPrimeNum(num: number): boolean {
+    
+   // let rArray: number[] = [];
+    let i = 2;
+
+    for (; i < num; i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isPrimeNum(primeNum1));
+// false

@@ -75,3 +75,67 @@ console.log(tinyTiger);
 // Tiny Tiger
 console.log("-----------------------------------------------");
 console.log("------------------------------------------");
+const robots = ["Hank-44", "Warren-21", "Mellon-Tech", "Eggplant-Head"];
+const ePetroleum = ["Thierry", "Laurent", "Antoine", "Hunzuu", "Gilgamesh"];
+function arrayIncludes(array, target) {
+    let i = 0;
+    for (; i < array.length; i++) {
+        if (array[i] == target) {
+            return true;
+        }
+    }
+    return false;
+}
+console.log(arrayIncludes(robots, "Mellon-Tech"));
+// true
+console.log(arrayIncludes(robots, "Bender"));
+// false
+console.log("------------------------------------------");
+console.log("-------------------------------------------------");
+let racecar = "racecar";
+let television = "televison";
+let radar = "radar";
+let hotel = "hotel";
+let kayak = "kayak";
+let restaurant = "restaurant";
+function isPalindrome(string) {
+    let i = 0;
+    let j = string.length - 1;
+    for (; i < j; i++, j--) {
+        if (string.charAt(i) !== string.charAt(j)) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPalindrome(racecar));
+// true
+console.log(isPalindrome(television));
+// false
+console.log(isPalindrome(radar));
+// true
+console.log(isPalindrome(hotel));
+// false
+console.log(isPalindrome(kayak));
+// true
+console.log(isPalindrome(restaurant));
+// false
+console.log("-----------------------------------------");
+console.log("------------------------------------------------");
+let primeNum1 = 9;
+let primeNum2 = 12;
+let primeNum3 = 7;
+let primeNum4 = 14;
+let primeNum5 = 23;
+let primeNum6 = 19;
+function isPrimeNum(num) {
+    // let rArray: number[] = [];
+    let i = 2;
+    for (; i < num; i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPrimeNum(primeNum1));
