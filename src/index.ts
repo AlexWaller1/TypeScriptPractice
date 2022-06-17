@@ -246,3 +246,5 @@ class OutlyingLanterns extends GreenLantern {
         this.outpost = outpost
     }
 }
+
+// Generics
