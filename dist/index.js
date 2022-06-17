@@ -130,3 +130,17 @@ console.log(add1(9, 10));
 // 19
 const subtraction1 = (x, y) => y - x;
 console.log(subtraction1(9, 10));
+class GreenLantern {
+    constructor(id, name, homePlanet, sector, fearless) {
+        this.id = id,
+            this.name = name,
+            this.homePlanet = homePlanet,
+            this.sector = sector,
+            this.fearless = fearless;
+    }
+    lanternConfirm() {
+        return `${this.name} is a member of the Green Lantern Corps`;
+    }
+}
+console.log("-------------------------------------------------");
+console.log("-------------------------------------------");

@@ -200,23 +200,39 @@ console.log(subtraction1(9, 10));
 
 // Classes
 
-class GreenLantern {
+// use and interface with classes
+interface LanternInterface {
     id: number;
-    private privateID: number;
-    protected protectedID: number;
+    name: string;
+    homePlanet: string;
+    sector: number;
+    fearless: boolean;
+    lanternConfirm(): string;
+    // ensuring lanternConfirm() will return a string
+}
+
+class GreenLantern implements LanternInterface{
+    public id: number;
+    // private privateID: number;
+    // protected protectedID: number;
     name: string;
     homePlanet: string;
     sector: number;
     fearless: boolean;
 
-    constructor(id: number, privateID: number, protectedID: number, name: string, homePlanet: string, sector: number, fearless: boolean) {
+    constructor(id: number, name: string, homePlanet: string, sector: number, fearless: boolean) {
         this.id = id,
-        this.privateID = privateID;
-        this.protectedID = protectedID;
         this.name = name,
         this.homePlanet = homePlanet,
         this.sector = sector,
         this.fearless = fearless
 
     }
+
+    lanternConfirm() {
+        return `${this.name} is a member of the Green Lantern Corps`;
+    }
 }
+
+console.log("-------------------------------------------------");
+console.log("-------------------------------------------");
