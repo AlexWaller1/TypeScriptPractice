@@ -192,8 +192,9 @@ function isPrimeNum(num: number): boolean {
     
    // let rArray: number[] = [];
     let i = 2;
+    let sqrt: number = Math.sqrt(num);
 
-    for (; i < num; i++) {
+    for (; i <= sqrt; i++) {
         if (num % i == 0) {
             return false;
         }
@@ -204,3 +205,38 @@ function isPrimeNum(num: number): boolean {
 
 console.log(isPrimeNum(primeNum1));
 // false
+console.log(isPrimeNum(primeNum2));
+// false
+console.log(isPrimeNum(primeNum3));
+// true
+console.log(isPrimeNum(primeNum4));
+// false
+console.log(isPrimeNum(primeNum5));
+// true
+console.log(isPrimeNum(primeNum6));
+// true
+
+console.log("------------------------------------------------");
+console.log("---------------------------------------------");
+
+let product1: number = 45;
+
+let product2: number = 52;
+
+let product3: number = 64;
+
+let product4: number = 55;
+
+let product5: number = 72;
+
+let product6: number = 96;
+
+function findAllFactors(num: number): number[] {
+    let rArray: number[] = [];
+    let i = 1;
+
+    for (; i <= num; i++) {
+        
+    }
+    return rArray;
+}
