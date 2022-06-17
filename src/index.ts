@@ -201,5 +201,22 @@ console.log(subtraction1(9, 10));
 // Classes
 
 class GreenLantern {
-    
+    id: number;
+    private privateID: number;
+    protected protectedID: number;
+    name: string;
+    homePlanet: string;
+    sector: number;
+    fearless: boolean;
+
+    constructor(id: number, privateID: number, protectedID: number, name: string, homePlanet: string, sector: number, fearless: boolean) {
+        this.id = id,
+        this.privateID = privateID;
+        this.protectedID = protectedID;
+        this.name = name,
+        this.homePlanet = homePlanet,
+        this.sector = sector,
+        this.fearless = fearless
+
+    }
 }
