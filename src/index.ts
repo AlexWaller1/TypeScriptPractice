@@ -248,3 +248,21 @@ class OutlyingLanterns extends GreenLantern {
 }
 
 // Generics
+
+// without Generic
+function getArray(elements: any[]): any[] {
+    return new Array().concat(elements);
+}
+
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(["a", "b", "c", "d"]);
+
+// with Generic
+
+function getArray2<T>(elements: T[]): T[] {
+    return new Array().concat(elements);
+}
+// Specifying a Generic type allow to reuse for many data types
+
+let numArray2 = getArray2<number>([1, 2, 3, 4]);
+let strArray2 = getArray2<string>(["a", "b", "c", "d"]);
