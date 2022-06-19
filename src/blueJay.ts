@@ -261,3 +261,41 @@ console.log(findAllFactors(product5));
 // [1, 72, 2, 36, 3, 24, 4, 18, 6, 12, 8, 9]
 console.log(findAllFactors(product6));
 // 1, 96, 2, 48, 3, 32, 4, 24, 6, 16, 8, 12]
+
+console.log("--------------------------------------------------");
+console.log("---------------------------------------------");
+
+console.log(robots[0]);
+// Hank-44
+
+let nums21: number[] = [52, 53, 54, 55, 56, 57];
+
+let nums22: number[] = [92, 93, 94, 95, 96, 97];
+
+let nums23: number[] = [122, 123, 124, 125, 126, 127];
+
+let true1: boolean[] = [true, true, false, true, true, false, true];
+
+let true2: boolean[] = [false, true, false, true];
+
+let true3: boolean[] = [true, false, false, true, true];
+
+function trueCount(array: boolean[]): number {
+    let count: number = 0;
+    let i: number = 0;
+
+    for (; i < array.length; i++) {
+        if (array[i]) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(trueCount(true1));
+// 5
+console.log(trueCount(true2));
+// 2
+console.log(trueCount(true3));
+// 3
