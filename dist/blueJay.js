@@ -482,7 +482,48 @@ const warren21Obj = {
     isRobot: true,
 };
 console.log("Warren-21 Object:");
+// Warren-21 Object:
 console.log(warren21Obj.id);
+// 1
 console.log(warren21Obj.name);
+// Warren-21
 console.log(warren21Obj.homeTown);
+// Nouvelle Milwaukee
 console.log(warren21Obj.isRobot);
+// true 
+console.log("---------------------------------------------");
+console.log("--------------------------------------------");
+const hank44Ob = {
+    id: 0,
+    name: "Hank-44",
+    homeTown: "Nouvelle Milwaukee",
+    isRobot: true,
+    message() {
+        return `${this.name} from RoboType:`;
+    }
+};
+console.log(hank44Ob.message());
+// Hank-44 from RoboType:
+console.log(hank44Ob.id);
+// 0
+console.log(hank44Ob.name);
+//  Hank-44
+console.log(hank44Ob.homeTown);
+// Nouvelle Milwaukee
+console.log(hank44Ob.isRobot);
+// true
+console.log("-------------------------------------------------");
+const warren21Ob = {
+    id: 1,
+    name: "Warren-21",
+    homeTown: "Nouvelle Milwaukee",
+    isRobot: true,
+    message() {
+        return `${this.name} from RoboType:`;
+    }
+};
+console.log(warren21Ob.message());
+console.log(warren21Ob.id);
+console.log(warren21Ob.name);
+console.log(warren21Ob.homeTown);
+console.log(warren21Ob.isRobot);
