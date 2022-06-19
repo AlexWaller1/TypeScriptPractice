@@ -254,3 +254,40 @@ console.log(stringSplit(mellonTech2, ""));
 console.log(stringSplit(mellonTech2, "-"));
 // ['Mellon', 'Tech']
 console.log(stringSplit(mellonTech2, "h"));
+// ['Mellon-Tec', '']
+console.log(stringSplit(eggplantHead, ""));
+// ['E', 'g', 'g', 'p', 'l', 'a', 'n', 't', '-', 'H', 'e', 'a', 'd']
+console.log(stringSplit(eggplantHead, "-"));
+// ['Eggplant', 'Head']
+console.log("----------------------------------------------");
+console.log("------------------------------------------");
+const mellonSplit1 = stringSplit(mellonTech2, "");
+console.log(mellonSplit1);
+// ['M', 'e', 'l', 'l', 'o', 'n', '-', 'T', 'e', 'c', 'h']
+const mellonSplit2 = stringSplit(mellonTech2, "-");
+console.log(mellonSplit2);
+// ['Mellon', 'Tech']
+const eggplantSplit1 = stringSplit(eggplantHead, "");
+console.log(eggplantSplit1);
+// ['E', 'g', 'g', 'p', 'l', 'a', 'n', 't', '-', 'H', 'e', 'a', 'd']
+const eggplantSplit2 = stringSplit(eggplantHead, "-");
+console.log(eggplantSplit2);
+// ['Eggplant', 'Head']
+function dotReverse(array) {
+    let temp = "";
+    let i = 0;
+    let j = array.length - 1;
+    for (; i < j; i++, j--) {
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+console.log(dotReverse(mellonSplit1));
+// ['h', 'c', 'e', 'T', '-', 'n', 'o', 'l', 'l', 'e', 'M']
+console.log(dotReverse(mellonSplit2));
+// ['Tech', 'Mellon']
+console.log(dotReverse(eggplantSplit1));
+// ['d', 'a', 'e', 'H', '-', 't', 'n', 'a', 'l', 'p', 'g', 'g', 'E']
+console.log(dotReverse(eggplantSplit2));
