@@ -483,3 +483,33 @@ console.log(dotJoin(timberTronIoSplit, "==!!=="));
 
 console.log("----------------------------------------------");
 console.log("===========================================");
+
+let any21: any[] = ["television", true, 3, [8]];
+
+let tuple21: [string, string, boolean, number] = ["string", "string2", true, 3];
+
+let tuple22: [string, boolean] = ["true", true];
+
+let roboTuples1: [number, string][] = [
+    [1, "Hank-44"],
+    [2, "Warren-21"],
+    [3, "Mellon-Tech"],
+    [4, "Eggplant-Head"],
+    [5, "Timber-Tron-Io"]
+];
+
+let roboTuples2: [number, string, boolean][] = [
+    [0, "Hank-44", true],
+    [1, "Warren-21", true],
+    [2, "Mellon-Tech", true],
+    [3, "Eggplant-Head", true],
+    [4, "Timber-Tron-Io", true]
+]
+
+let roboTuples3: [number, object][] = [
+    [0, {name: "Hank-44", isRobot: true}],
+    [1, {name: "Warren-21", isRobot: true}],
+    [2, {name: "Mellon-Tech", isRobot: true}],
+    [3, {name: "Eggplant-Head", isRobot: true}],
+    [4, {name: "Timber-Tron-Io", isRobot: true}]
+]
