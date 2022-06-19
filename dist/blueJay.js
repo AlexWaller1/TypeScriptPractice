@@ -523,7 +523,54 @@ const warren21Ob = {
     }
 };
 console.log(warren21Ob.message());
+// Warren-21 from RoboType:
 console.log(warren21Ob.id);
+// 1
 console.log(warren21Ob.name);
+// Warren-21
 console.log(warren21Ob.homeTown);
+// Nouvelle Milwaukee
 console.log(warren21Ob.isRobot);
+// true
+console.log("-----------------------------------------------");
+const mellonTechOb = {
+    id: 2,
+    name: "Mellon-Tech",
+    homeTown: "Somerville, New Jersey",
+    isRobot: true,
+    message() {
+        return `${this.name} from RoboType:`;
+    }
+};
+console.log(mellonTechOb.message());
+// Mellon-Tech from RobotType:
+console.log(mellonTechOb.id);
+// 2
+console.log(mellonTechOb.name);
+// Mellon-Tech
+console.log(mellonTechOb.homeTown);
+// Somerville, New Jersey
+console.log(mellonTechOb.isRobot);
+// true 
+console.log("-------------------------------------------");
+const eggplantHeadOb = {
+    id: 3,
+    name: "Eggplant-Head",
+    homeTown: "Somerville, New Jersey",
+    isRobot: true,
+    message() {
+        return `${this.name} from RoboType:`;
+    }
+};
+console.log(eggplantHeadOb.message());
+// Eggplant-Head from RoboType
+console.log(eggplantHeadOb.id);
+// 3
+console.log(eggplantHeadOb.name);
+// Eggplant-Head
+console.log(eggplantHeadOb.homeTown);
+// Somerville, New Jersey
+console.log(eggplantHeadOb.isRobot);
+// true
+console.log("-------------------------------------------------");
+console.log("--------------------------------------------");
