@@ -513,3 +513,36 @@ let roboTuples3: [number, object][] = [
     [3, {name: "Eggplant-Head", isRobot: true}],
     [4, {name: "Timber-Tron-Io", isRobot: true}]
 ]
+
+console.log("-------------------------------------------");
+console.log("---------------------------------------");
+
+// unions
+
+let num31: number | string = 31;
+
+console.log(num31);
+// 31 (number)
+
+let num32: number | string = "32";
+
+console.log(num32);
+// 32 (string)
+
+let num33: string | boolean = true;
+
+console.log(num33);
+// true
+
+let num34: number | object = { id: 34 };
+
+console.log(num34);
+// {id: 34}
+
+let num35: object | boolean = { id: 35 };
+
+console.log(num35);
+// {id: 35}
+
+console.log("-----------------------------------------------");
+console.log("------------------------------------------");
