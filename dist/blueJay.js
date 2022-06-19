@@ -218,6 +218,7 @@ const hank44 = "Hank-44";
 const warren21 = "Warren-21";
 const mellonTech2 = "Mellon-Tech";
 const eggplantHead = "Eggplant-Head";
+const timberTronIo = "Timber-Tron-Io";
 //-------------------------------------------------------
 let mt3 = mellonTech2.split("h");
 console.log(mt3);
@@ -259,6 +260,9 @@ console.log(stringSplit(eggplantHead, ""));
 // ['E', 'g', 'g', 'p', 'l', 'a', 'n', 't', '-', 'H', 'e', 'a', 'd']
 console.log(stringSplit(eggplantHead, "-"));
 // ['Eggplant', 'Head']
+console.log(stringSplit(timberTronIo, "-"));
+// ['Timber', 'Tron', 'Io']
+const timberTronIoSplit = stringSplit(timberTronIo, "-");
 console.log("----------------------------------------------");
 console.log("------------------------------------------");
 const mellonSplit1 = stringSplit(mellonTech2, "");
@@ -291,3 +295,51 @@ console.log(dotReverse(mellonSplit2));
 console.log(dotReverse(eggplantSplit1));
 // ['d', 'a', 'e', 'H', '-', 't', 'n', 'a', 'l', 'p', 'g', 'g', 'E']
 console.log(dotReverse(eggplantSplit2));
+// ['Head', 'Eggplant']
+console.log("----------------------------------------------");
+console.log("-----------------------------------------");
+const mellonReverse1 = dotReverse(mellonSplit1);
+console.log(mellonReverse1);
+// ['M', 'e', 'l', 'l', 'o', 'n', '-', 'T', 'e', 'c', 'h']
+const mellonReverse2 = dotReverse(mellonSplit2);
+console.log(mellonReverse2);
+// ['Mellon', 'Tech']
+const eggplantReverse1 = dotReverse(eggplantSplit1);
+console.log(eggplantReverse1);
+// ['E', 'g', 'g', 'p', 'l', 'a', 'n', 't', '-', 'H', 'e', 'a', 'd']
+const eggplantReverse2 = dotReverse(eggplantSplit2);
+console.log(eggplantReverse2);
+// ['Eggplant', 'Head]
+function dotJoin(array, char) {
+    let rString = "";
+    let i = 0;
+    if (char == "") {
+        for (; i < array.length; i++) {
+            rString = rString.concat(array[i]);
+        }
+    }
+    if (char !== "") {
+        for (; i < array.length; i++) {
+            if (i !== array.length - 1) {
+                rString = rString.concat(array[i]);
+                rString = rString.concat(char);
+            }
+            else {
+                rString = rString.concat(array[i]);
+            }
+        }
+    }
+    return rString;
+}
+console.log(dotJoin(mellonReverse1, ""));
+// Mellon-Tech
+console.log(dotJoin(mellonReverse2, "==!!=="));
+// Mellon==!!==Tech
+console.log(dotJoin(eggplantReverse1, ""));
+// Eggplant-Head
+console.log(dotJoin(eggplantReverse2, "==!!=="));
+// Eggplant==!!==Head
+console.log(dotJoin(timberTronIoSplit, "==!!=="));
+// Timber==!!==Tron==!!==Io
+console.log("----------------------------------------------");
+console.log("===========================================");
