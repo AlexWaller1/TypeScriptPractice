@@ -387,3 +387,65 @@ console.log(num35);
 // {id: 35}
 console.log("-----------------------------------------------");
 console.log("------------------------------------------");
+// Enums
+var NumSample;
+(function (NumSample) {
+    NumSample[NumSample["one"] = 0] = "one";
+    NumSample[NumSample["two"] = 1] = "two";
+    NumSample[NumSample["three"] = 2] = "three";
+    NumSample[NumSample["four"] = 3] = "four";
+    NumSample[NumSample["five"] = 4] = "five";
+})(NumSample || (NumSample = {}));
+;
+console.log("NumSample:");
+// NumSample:
+console.log(NumSample.one);
+// 0
+console.log(NumSample.two);
+// 1
+console.log(NumSample.three);
+// 2
+console.log(NumSample.four);
+// 3
+console.log(NumSample.five);
+// 4
+var NumSample2;
+(function (NumSample2) {
+    NumSample2[NumSample2["twenty"] = 20] = "twenty";
+    NumSample2[NumSample2["twentyOne"] = 21] = "twentyOne";
+    NumSample2[NumSample2["twentyTwo"] = 22] = "twentyTwo";
+    NumSample2[NumSample2["twentyThree"] = 23] = "twentyThree";
+    NumSample2[NumSample2["twentyFour"] = 24] = "twentyFour";
+    NumSample2[NumSample2["twentyFive"] = 25] = "twentyFive";
+})(NumSample2 || (NumSample2 = {}));
+console.log("NumSample2:");
+// NumSample2:
+console.log(NumSample2.twenty);
+// 20
+console.log(NumSample2.twentyOne);
+// 21
+console.log(NumSample2.twentyTwo);
+// 22
+console.log(NumSample2.twentyThree);
+// 23
+console.log(NumSample2.twentyFour);
+// 24
+console.log(NumSample2.twentyFive);
+// 25
+//==========================================================
+var Hammerhead;
+(function (Hammerhead) {
+    Hammerhead["name"] = "Hammerhead";
+    Hammerhead["occupation"] = "Pickerel Cola Space Truck Driver";
+    Hammerhead["homePlanet"] = "Venice Sands 5";
+    Hammerhead["hasPickerelCola"] = "true";
+    // booleans not allowed in enums
+    Hammerhead["hasCoolJacket"] = "true";
+    // booleans not allowed in enums
+})(Hammerhead || (Hammerhead = {}));
+console.log("Hammerhead:");
+console.log(Hammerhead.name);
+console.log(Hammerhead.occupation);
+console.log(Hammerhead.homePlanet);
+console.log(Hammerhead.hasPickerelCola);
+console.log(Hammerhead.hasCoolJacket);

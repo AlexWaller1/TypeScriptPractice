@@ -546,3 +546,77 @@ console.log(num35);
 
 console.log("-----------------------------------------------");
 console.log("------------------------------------------");
+
+// Enums
+enum NumSample {
+    one,
+    two,
+    three,
+    four,
+    five
+};
+
+console.log("NumSample:");
+// NumSample:
+console.log(NumSample.one);
+// 0
+console.log(NumSample.two);
+// 1
+console.log(NumSample.three);
+// 2
+console.log(NumSample.four);
+// 3
+console.log(NumSample.five);
+// 4
+
+enum NumSample2 {
+    twenty = 20,
+    twentyOne,
+    twentyTwo,
+    twentyThree,
+    twentyFour,
+    twentyFive
+}
+
+console.log("NumSample2:");
+// NumSample2:
+console.log(NumSample2.twenty);
+// 20
+console.log(NumSample2.twentyOne);
+// 21
+console.log(NumSample2.twentyTwo);
+// 22
+console.log(NumSample2.twentyThree);
+// 23
+console.log(NumSample2.twentyFour);
+// 24
+console.log(NumSample2.twentyFive);
+// 25
+
+//==========================================================
+
+enum Hammerhead {
+    name = "Hammerhead",
+    occupation = "Pickerel Cola Space Truck Driver",
+    homePlanet = "Venice Sands 5",
+    hasPickerelCola = "true",
+    // booleans not allowed in enums
+    hasCoolJacket = "true"
+    // booleans not allowed in enums
+}
+
+console.log("Hammerhead:");
+// Hammerhead:
+console.log(Hammerhead.name);
+// Hammerhead
+console.log(Hammerhead.occupation);
+// Pickerel Cola Space Truck Driver
+console.log(Hammerhead.homePlanet);
+// Venice Sands 5
+console.log(Hammerhead.hasPickerelCola);
+// true (string)
+console.log(Hammerhead.hasCoolJacket);
+// true (strings)
+
+console.log("-----------------------------------------------");
+console.log("-------------------------------------------");
