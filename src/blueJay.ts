@@ -299,3 +299,67 @@ console.log(trueCount(true2));
 // 2
 console.log(trueCount(true3));
 // 3
+
+console.log("-------------------------------------------");
+console.log("--------------------------------------------");
+
+
+
+const hank44: string = "Hank-44";
+
+const warren21: string = "Warren-21";
+
+const mellonTech2: string = "Mellon-Tech";
+
+const eggplantHead: string = "Eggplant-Head";
+
+//-------------------------------------------------------
+
+let mt3 = mellonTech2.split("h");
+
+console.log(mt3);
+// ['Mellon-Tec', '']
+
+
+//-------------------------------------------------
+
+function stringSplit(string: string, char: string): string[] {
+    let rArray: string[] = [];
+    let i: number = 0;
+
+    if (char == "") {
+
+        for (; i < string.length; i++) {
+            let newElement = string.charAt(i);
+            rArray.push(newElement);
+        }
+    }
+
+    if (char !== "") {
+        let newString = "";
+
+        for (; i < string.length; i++) {
+            if (string.charAt(i) !== char) {
+                newString = newString.concat(string.charAt(i));
+            }
+            if (string.charAt(i) == char) {
+                rArray.push(newString);
+                newString = "";
+            }
+            if (i == string.length - 1) {
+                rArray.push(newString);
+            }
+        }
+    }
+
+
+    return rArray;
+}
+
+console.log(stringSplit(mellonTech2, ""));
+// ['M', 'e', 'l', 'l', 'o', 'n', '-', 'T', 'e', 'c', 'h']
+console.log(stringSplit(mellonTech2, "-"));
+// ['Mellon', 'Tech']
+console.log(stringSplit(mellonTech2, "h"));
+// ['Mellon-Tec', '']
+
