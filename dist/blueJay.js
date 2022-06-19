@@ -444,8 +444,45 @@ var Hammerhead;
     // booleans not allowed in enums
 })(Hammerhead || (Hammerhead = {}));
 console.log("Hammerhead:");
+// Hammerhead:
 console.log(Hammerhead.name);
+// Hammerhead
 console.log(Hammerhead.occupation);
+// Pickerel Cola Space Truck Driver
 console.log(Hammerhead.homePlanet);
+// Venice Sands 5
 console.log(Hammerhead.hasPickerelCola);
+// true (string)
 console.log(Hammerhead.hasCoolJacket);
+// true (strings)
+console.log("-----------------------------------------------");
+console.log("-------------------------------------------");
+// TypeScript Objects
+const hank44Obj = {
+    id: 0,
+    name: "Hank-44",
+    homeTown: "Nouvelle Milwaukee",
+    isRobot: true
+};
+console.log("Hank-44 Object:");
+// Hank-44 Object
+console.log(hank44Obj.id);
+// 0
+console.log(hank44Obj.name);
+// Hank-44
+console.log(hank44Obj.homeTown);
+// Nouvelle Milwaukee
+console.log(hank44Obj.isRobot);
+// true
+console.log("---------------------------------------------");
+const warren21Obj = {
+    id: 1,
+    name: "Warren-21",
+    homeTown: "Nouvelle Milwaukee",
+    isRobot: true,
+};
+console.log("Warren-21 Object:");
+console.log(warren21Obj.id);
+console.log(warren21Obj.name);
+console.log(warren21Obj.homeTown);
+console.log(warren21Obj.isRobot);

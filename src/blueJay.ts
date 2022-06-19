@@ -620,3 +620,55 @@ console.log(Hammerhead.hasCoolJacket);
 
 console.log("-----------------------------------------------");
 console.log("-------------------------------------------");
+
+// TypeScript Objects
+
+const hank44Obj: {
+    id: number,
+    name: string,
+    homeTown: string,
+    isRobot: boolean
+} = {
+    id: 0,
+    name: "Hank-44",
+    homeTown: "Nouvelle Milwaukee",
+    isRobot: true
+}
+
+console.log("Hank-44 Object:");
+// Hank-44 Object
+console.log(hank44Obj.id);
+// 0
+console.log(hank44Obj.name);
+// Hank-44
+console.log(hank44Obj.homeTown);
+// Nouvelle Milwaukee
+console.log(hank44Obj.isRobot);
+// true
+
+console.log("---------------------------------------------");
+
+const warren21Obj: {
+    id: number,
+    name: string,
+    homeTown: string,
+    isRobot: boolean,
+   
+} = {
+    id: 1,
+    name: "Warren-21",
+    homeTown: "Nouvelle Milwaukee",
+    isRobot: true,
+   
+}
+
+console.log("Warren-21 Object:");
+// Warren-21 Object:
+console.log(warren21Obj.id);
+// 1
+console.log(warren21Obj.name);
+// Warren-21
+console.log(warren21Obj.homeTown);
+// Nouvelle Milwaukee
+console.log(warren21Obj.isRobot);
+// true 
