@@ -234,9 +234,30 @@ let product6: number = 96;
 function findAllFactors(num: number): number[] {
     let rArray: number[] = [];
     let i = 1;
+    let sqrt = Math.sqrt(num);
 
-    for (; i <= num; i++) {
+    for (; i <= sqrt; i++) {
+        if (num % i == 0) {
+            let factor2 = num / i;
+            rArray.push(i);
+            if (i !== factor2) {
+                rArray.push(factor2);
+            }
+        }
         
     }
     return rArray;
 }
+
+console.log(findAllFactors(product1));
+// [1, 45, 3, 15, 5, 9]
+console.log(findAllFactors(product2));
+// [1, 52, 2, 26, 4, 13]
+console.log(findAllFactors(product3));
+// [1, 64, 2, 32, 4, 16, 8]
+console.log(findAllFactors(product4));
+// [1, 55, 5, 11]
+console.log(findAllFactors(product5));
+// [1, 72, 2, 36, 3, 24, 4, 18, 6, 12, 8, 9]
+console.log(findAllFactors(product6));
+// 1, 96, 2, 48, 3, 32, 4, 24, 6, 16, 8, 12]
