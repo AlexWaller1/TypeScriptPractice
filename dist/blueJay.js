@@ -574,3 +574,35 @@ console.log(eggplantHeadOb.isRobot);
 // true
 console.log("-------------------------------------------------");
 console.log("--------------------------------------------");
+// Type Assertion
+let testVar1 = 37;
+console.log(testVar1);
+// 37 (number)
+console.log(typeof testVar1);
+// number
+let testVar2 = testVar1;
+console.log(testVar2);
+// 37 (number)
+console.log(typeof testVar2);
+// number
+let testVar3 = testVar1;
+console.log(testVar3);
+// 37 (number)
+console.log(typeof testVar3);
+// number
+console.log("---------------------------------------------");
+let testString = "FJ Cruiser";
+console.log(typeof testString);
+// string
+let testString2 = testString;
+console.log(testString2);
+// FJ Cruiser
+testString2 = "Jeep Wrangler";
+console.log(testString2);
+// Jeep Wrangler
+// testString2 = 2
+// will throw an error
+testString = true;
+// will not throw an error
+console.log("--------------------------------------------");
+console.log("-------------------------------------------");
