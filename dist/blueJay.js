@@ -604,5 +604,21 @@ console.log(testString2);
 // will throw an error
 testString = true;
 // will not throw an error
+let michaelChabon = "Michael Chabon";
+let michaelChabon2 = michaelChabon;
+console.log(michaelChabon2);
+// Michael Chabon
+michaelChabon2 = "Wonder Boys";
+console.log(michaelChabon2);
+// Wonder Boys
 console.log("--------------------------------------------");
 console.log("-------------------------------------------");
+console.log("Hello Oa");
+// Hello Oa
+const mellon_Tech = "Mellon-Tech";
+// can use underscore on variable names
+console.log(mellon_Tech);
+// Mellon-Tech
+const eggplant_Head = "Eggplant-Head";
+// can use underscore on variable names
+console.log(eggplant_Head);
