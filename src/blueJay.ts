@@ -945,5 +945,13 @@ console.log(wibaux.homePlanet);
 // Hardin-37
 console.log(wibaux.hasPickerelCola);
 // false
+
+type TestNum = number;
+// can do this with a type but not an interface
+type TestNum2 = number | string;
+// can do this with a type but not an interface
+type TestNum3 = number | string | boolean;
+// can do this with a string but not with an interface
+
 console.log("----------------------------------------------");
 console.log("-------------------------------------------");
