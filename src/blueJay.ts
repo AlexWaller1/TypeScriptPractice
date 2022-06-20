@@ -955,3 +955,26 @@ type TestNum3 = number | string | boolean;
 
 console.log("----------------------------------------------");
 console.log("-------------------------------------------");
+
+// Interfaces with Functions
+
+interface MathTrueFalse {
+    (x: number): boolean;
+}
+
+const isEven: MathTrueFalse = (num: number): boolean => {
+    if (num % 2 == 0) {
+        return true;
+    }
+    return false;
+}
+
+console.log(isEven(5));
+// false
+console.log(isEven(10));
+// true
+console.log(isEven(15));
+// false
+console.log(isEven(20));
+// true
+console.log("---------------------------------------------");

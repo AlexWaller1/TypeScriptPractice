@@ -699,6 +699,17 @@ console.log(wibaux.occupation);
 console.log(wibaux.homePlanet);
 // Hardin-37
 console.log(wibaux.hasPickerelCola);
-// false
+// can do this with a string but not with an interface
 console.log("----------------------------------------------");
 console.log("-------------------------------------------");
+const isEven = (num) => {
+    if (num % 2 == 0) {
+        return true;
+    }
+    return false;
+};
+console.log(isEven(5));
+console.log(isEven(10));
+console.log(isEven(15));
+console.log(isEven(20));
+console.log("---------------------------------------------");
