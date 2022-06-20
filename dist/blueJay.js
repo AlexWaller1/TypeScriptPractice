@@ -709,7 +709,40 @@ const isEven = (num) => {
     return false;
 };
 console.log(isEven(5));
+// false
 console.log(isEven(10));
+// true
 console.log(isEven(15));
+// false
 console.log(isEven(20));
+// true
+console.log("---------------------------------------------");
+let racecar2 = "racecar";
+let television2 = "television";
+let kayak2 = "kayak";
+let table2 = "table";
+let radar2 = "radar";
+let lamp2 = "lamp";
+const isPalindrome2 = (string) => {
+    let i = 0;
+    let j = string.length - 1;
+    for (; i < j; i++, j--) {
+        if (string.charAt(i) !== string.charAt(j)) {
+            return false;
+        }
+    }
+    return true;
+};
+console.log(isPalindrome2(racecar2));
+// true
+console.log(isPalindrome2(television2));
+// false
+console.log(isPalindrome2(kayak2));
+// true
+console.log(isPalindrome2(table2));
+// false
+console.log(isPalindrome2(radar2));
+// true
+console.log(isPalindrome2(lamp2));
+// false
 console.log("---------------------------------------------");

@@ -978,3 +978,48 @@ console.log(isEven(15));
 console.log(isEven(20));
 // true
 console.log("---------------------------------------------");
+
+interface StringBoolean {
+    (string: string): boolean;
+}
+
+let racecar2: string = "racecar";
+
+let television2: string = "television";
+
+let kayak2: string = "kayak";
+
+let table2: string = "table";
+
+let radar2: string = "radar";
+
+let lamp2: string = "lamp";
+
+const isPalindrome2: StringBoolean = (string: string): boolean => {
+    
+    let i: number = 0;
+    let j: number = string.length - 1;
+
+    for (; i < j; i++, j--) {
+        if (string.charAt(i) !== string.charAt(j)) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isPalindrome2(racecar2));
+// true
+console.log(isPalindrome2(television2));
+// false
+console.log(isPalindrome2(kayak2));
+// true
+console.log(isPalindrome2(table2));
+// false
+console.log(isPalindrome2(radar2));
+// true
+console.log(isPalindrome2(lamp2));
+// false
+
+console.log("---------------------------------------------");
