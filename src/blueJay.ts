@@ -852,3 +852,98 @@ console.log(eggplant_Head);
 
 console.log("---------------------------------------------");
 console.log("------------------------------------------");
+
+// TypeScript Interfaces
+// Similar to Types as they give a BluePrint for objects to follow
+console.log("TypeScript Interfaces");
+
+console.log("--------------------------------------------");
+
+interface HammerheadChars {
+    id: number;
+    name: string;
+    occupation: string;
+    homePlanet: string;
+    hasPickerelCola: boolean;
+}
+
+const hammerHead: HammerheadChars = {
+    id: 1,
+    name: "Hammerhead",
+    occupation: "Pickerel Cola Space Truck Driver",
+    homePlanet: "Venice Sands 5",
+    hasPickerelCola: true
+}
+
+console.log(hammerHead.id);
+// 1
+console.log(hammerHead.name);
+// Hammerhead
+console.log(hammerHead.occupation);
+// Pickerel Cola Space Truck Driver
+console.log(hammerHead.homePlanet);
+// Venice Sands 5
+console.log(hammerHead.hasPickerelCola);
+// true
+console.log("-----------------------------------------------");
+
+const taylor: HammerheadChars = {
+    id: 2,
+    name: "Taylor",
+    occupation: "Pickerel Cola Space Truck Driver",
+    homePlanet: "Mariner Mists",
+    hasPickerelCola: true
+}
+
+console.log(taylor.id);
+// 2
+console.log(taylor.name);
+// Taylor
+console.log(taylor.occupation);
+// Pickerel Cola Space Truck Driver
+console.log(taylor.homePlanet);
+// Mariner Mists
+console.log(taylor.hasPickerelCola);
+// true
+console.log("------------------------------------------------");
+
+const harvey: HammerheadChars = {
+    id: 3,
+    name: "Harvey",
+    occupation: "River Dam Builder",
+    homePlanet: "Hardin-37",
+    hasPickerelCola: false
+}
+
+console.log(harvey.id);
+// 3
+console.log(harvey.name);
+// Harvey
+console.log(harvey.occupation);
+// River Dam Builder
+console.log(harvey.homePlanet);
+// Hardin-37
+console.log(harvey.hasPickerelCola);
+// true
+console.log("------------------------------------------------");
+
+const wibaux: HammerheadChars = {
+    id: 4,
+    name: "Wibaux",
+    occupation: "River Guide",
+    homePlanet: "Hardin-37",
+    hasPickerelCola: false
+}
+
+console.log(wibaux.id);
+// 4
+console.log(wibaux.name);
+// Wibaux
+console.log(wibaux.occupation);
+// River Guide
+console.log(wibaux.homePlanet);
+// Hardin-37
+console.log(wibaux.hasPickerelCola);
+// false
+console.log("----------------------------------------------");
+console.log("-------------------------------------------");
