@@ -1046,6 +1046,24 @@ const cornelius: Hybrid = {
     favActivity: "Aroma Therapy",
     hybridPush() {
         hybrids.push(this.name);
+        return hybrids;
     }
     // arrow function cannot look for "this"
 }
+
+console.log(cornelius.name);
+// Cornelius
+console.log(cornelius.hybridType);
+// Tree Hybrid
+console.log(cornelius.creator);
+// The Incubator
+console.log(cornelius.home);
+// Randall Park Mall
+console.log(cornelius.friends[0]);
+// Owen
+console.log(cornelius.friends[1]);
+// Everett;
+console.log(cornelius.favActivity);
+// Aroma Therapy
+console.log(cornelius.hybridPush());
+// ['Cornelius']

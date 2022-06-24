@@ -746,3 +746,33 @@ console.log(isPalindrome2(radar2));
 console.log(isPalindrome2(lamp2));
 // false
 console.log("---------------------------------------------");
+console.log("-----------------------------------------");
+const hybrids = [];
+const cornelius = {
+    name: "Cornelius",
+    hybridType: "Tree Hybrid",
+    creator: "The Incubator",
+    home: "Randall Park Mall",
+    friends: ["Owen", "Everett", "Magnus", "Thompkins"],
+    favActivity: "Aroma Therapy",
+    hybridPush() {
+        hybrids.push(this.name);
+        return hybrids;
+    }
+    // arrow function cannot look for "this"
+};
+console.log(cornelius.name);
+// Cornelius
+console.log(cornelius.hybridType);
+// Tree Hybrid
+console.log(cornelius.creator);
+// The Incubator
+console.log(cornelius.home);
+// Randall Park Mall
+console.log(cornelius.friends[0]);
+// Owen
+console.log(cornelius.friends[1]);
+// Everett;
+console.log(cornelius.favActivity);
+// Aroma Therapy
+console.log(cornelius.hybridPush());
