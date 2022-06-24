@@ -1023,3 +1023,29 @@ console.log(isPalindrome2(lamp2));
 // false
 
 console.log("---------------------------------------------");
+console.log("-----------------------------------------");
+
+const hybrids: string[] = [];
+
+interface Hybrid {
+    name: string;
+    hybridType: string;
+    creator: string;
+    home: string;
+    friends: string[];
+    favActivity: string;
+    hybridPush: Function;
+}
+
+const cornelius: Hybrid = {
+    name: "Cornelius",
+    hybridType: "Tree Hybrid",
+    creator: "The Incubator",
+    home: "Randall Park Mall",
+    friends: ["Owen", "Everett", "Magnus", "Thompkins"],
+    favActivity: "Aroma Therapy",
+    hybridPush() {
+        hybrids.push(this.name);
+    }
+    // arrow function cannot look for "this"
+}
