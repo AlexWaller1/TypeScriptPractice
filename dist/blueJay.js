@@ -776,3 +776,24 @@ console.log(cornelius.friends[1]);
 console.log(cornelius.favActivity);
 // Aroma Therapy
 console.log(cornelius.hybridPush());
+// ['Cornelius']
+console.log("---------------------------------------------");
+console.log("------------------------------------");
+class TS_Array {
+    // remember class properties have to be declared first in TypeScript
+    constructor(container, length) {
+        this.container = [];
+        this.length = 0;
+    }
+    push(element) {
+        this.container[this.length] = element;
+        this.length++;
+        return this.length;
+    }
+}
+const crashBandicoot2 = {};
+const crashBandicoot3 = [];
+crashBandicoot3[0] = "Crash Bandicoot";
+crashBandicoot3[1] = "Neo Cortex";
+crashBandicoot3[2] = "Dingodile";
+console.log(crashBandicoot3);
